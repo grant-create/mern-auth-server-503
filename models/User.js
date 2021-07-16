@@ -1,7 +1,10 @@
 const mongoose = require('mongoose')
 
 const favoriteSchema = new mongoose.Schema({
-    title: String,
+    title: String
+        
+    
+    
     
 })
 
