@@ -22,6 +22,14 @@ app.use(express.urlencoded({extended: false}))
 app.use('/api-v1/users', require('./controllers/api-v1/users.js'))
 // app.use('/api-v1/profile', require('./controllers/api-v1/profile.js'))
 
+
+app.get('/', async (req,res) => {
+    
+    res.json({msg: 'hi, the user endpoint is ok 🆗'})
+})
+
+
+
 // custom middleware
 
 // const middleWare = (req, res, next) => {
